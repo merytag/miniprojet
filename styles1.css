@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    transition: 0.5s;
+}
+.links-container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.link-item {
+    margin: 10px;
+}
+.link {
+    font-size: 20px;
+    color: #997C70;
+    text-decoration: none;
+    padding: 10px;
+    opacity: 0.7;
+    transition: .5s;
+}
+.link.active, .link:hover {
+    opacity: 1;
+}
+.user-interaction {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cart, .user {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+}
+.cart-icon, .user-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cart-item-count {
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #4B5945 ;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 50%;
+    background-color: #997C70;
+    position: absolute;
+    bottom: -12px;
+    left: -12px;
+}
+.header-section {
+    width: 100%;
+    height: 25vh;
+    background-color: #4B5945;
+}
+.header-heading {
+    font-size: 100px;
+    text-transform: capitalize;
+    color: antiquewhite;
+    font-family: 'Georgia', serif;
+}
+/*top-selling*/
+.top-selling {
+    position: relative;
+    padding: 60px 5vw;
+}
+.section-title{
+text-transform: capitalize;
+font-size: 35px;
+margin-bottom: 35px;
+}
+.product-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.product-card{
+    border: 10px solid #66785F;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background: #66785F;
+}
+.product-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.product-name{
+    position: absolute;
+    color: antiquewhite;
+    text-transform: capitalize;
+    font-family: fantasy;
+    font-size: 25px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+.product-card:hover .product-name {
+    opacity: 1;
+}
+.product-card:hover .product-img {
+    opacity: 0.5;
+}
+/*mid section*/
+.cllg-sec {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.cllg-sec h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4B5945;
+}
+
+.cllg-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.cllg-item img {
+    width: 100%; /* Make images fill the container's width */
+    height: 100%; /* Make images fill the container's height */
+    object-fit: cover; /* Ensures that images are cropped to fill the container while maintaining aspect ratio */
+}
+
+/*review*/
+.testimonials {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+}
+
+.testimonials h2 {
+    font-size: 22px;
+    text-align: center;
+    color: #66785F;
+    margin-bottom: 20px;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #4B5945; /* A simple left border to give it some subtle emphasis */
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    color: #4B5945;
+    margin-bottom: 10px;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+}
+
+.customer-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.customer-details {
+    font-size: 14px;
+    color: #66785F;
+}
+
+.customer-details strong {
+    font-weight: bold;
+}
+
+/*end section*/
+.end-sec {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.end-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.end-info {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.end-image {
+    max-width: 100%;
+    height: auto;
+}
+/*footer*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #4B5945;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-txt {
+    margin-bottom: 10px;
+}
+
